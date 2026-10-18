@@ -39,3 +39,5 @@ Foundation
 
 - Component Composition
     - a design pattern where you build complex user interfaces by combining smaller independent and reusable components
+    
+- Passing prop to component is same as passing arguments to a function

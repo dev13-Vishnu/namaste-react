@@ -1,0 +1,41 @@
+Scripts
+- dev mod- npm run <name of script> 
+- prod mod - npm run build< name of script>
+- for name "start" can omit "run" (start is a key word reserved by npm)
+
+Foundation
+- React.createElement 
+    -takes 3 arguments
+        - name of the tag
+        - attributes
+        - childrens
+    - returns a javascript object not html createElement
+
+- jsx
+    -syntax extension for JavaScript 
+    - lets you write HTML-like markup directly inside your JavaScript or TypeScript code.
+    - Charecteristics:
+        - UI Description:
+            describes what the user interface should look like by producing React Elements or virtual DOM nodes.
+
+        - Not Direct Browser Code:
+            - Browsers cannot run JSX natively. 
+            - Build Tools and compilers like Babel, SWC, or esbuild transform JSX into standard React.CreateElement() JavaScript calls before execution
+
+        - Embeded Expressions:
+            - can embed any valid JavaScript expression inside JSX by wrapping it in curly braces {}
+
+    - Syntax Rules:
+        - Single Root Elements:
+            - A JSX expression must return a single top-level element or a React Fragment(<>...</>).
+        - CamelCase Attributes:
+            - HTML attributes use camelCase in JSX instea of lowercase (for example, "className" instead of "class", and "htmlFor" instead  of "for" ).
+    - js engine understand ECMAScript . Browser won't understand jsx
+    - bable in parcel transpiles jsx into javascript(ECMAScript)
+- React Component
+    - Class based components
+    - Functional components
+        -Javascript function that returns a react element
+
+- Component Composition
+    - a design pattern where you build complex user interfaces by combining smaller independent and reusable components

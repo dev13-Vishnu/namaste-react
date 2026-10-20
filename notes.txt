@@ -96,5 +96,8 @@ Two Types of Export / Import
 - React Hooks
     - Normal JS Utility  functions
     - useState()
-    - useEffect()
-    
+    - useEffect() 
+        -useEffect run after render.
+
+Shimmer UI
+

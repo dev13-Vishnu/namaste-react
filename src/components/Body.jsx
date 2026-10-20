@@ -1,6 +1,7 @@
 import RestaurantCard from "./RestaurantCard";
 import { resData } from "../utils/mockData";
 import { useState } from "react";
+import Shimmer from "./Shimmer";
 const Body = () => {
   const [resList, setResList] = useState(resData);
 
@@ -10,7 +11,10 @@ const Body = () => {
     );
     setResList(filtered);
   };
-  return (
+  const handleClearFilter = ()=> {
+    setResList(resData)
+  }
+  return resList.length ==0 ? <Shimmer/>: (
     <div className="body">
       <div className="search">Search</div>
       <div className="filter">
@@ -19,6 +23,9 @@ const Body = () => {
           className="filter-btn"
         >
           Top Rated Restaurants
+        </button>
+        <button className="clear-btn" onClick={handleClearFilter}>
+          Clear Filter
         </button>
       </div>
       <div className="res-container">

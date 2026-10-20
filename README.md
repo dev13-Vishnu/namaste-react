@@ -17,3 +17,22 @@
 - HTTPS
 - Tree shaking - remove unused code
 - Browsers list
+
+
+
+/**
+ * Header
+ * - Logo
+ * - Nav Items
+ * body
+ * - Search
+ * - Restaurant container
+ *      - Restaurant Card
+ *          - Img
+ *          - Name of restaurant, Star rating, Cusines, delivery time
+ * Footer
+ * - CopyRight
+ * - Links
+ * - Address
+ * - Contact
+ */

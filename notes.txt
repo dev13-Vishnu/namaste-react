@@ -41,3 +41,60 @@ Foundation
     - a design pattern where you build complex user interfaces by combining smaller independent and reusable components
     
 - Passing prop to component is same as passing arguments to a function
+
+-Config Driven UI
+    - a.k.a - Server Driven UI or Dynamic UI
+    - Design pattern
+    - structure of layout , behavior, of a user interface are defined using external configuration data. (JSON or JavaScript Objects)
+
+    - How It Works
+
+    - 1. The Config (Data): A backend server, CMS, or local file sends a structured data object describing what should appear on the screen.
+        • Example: { type: "carousel", data: { title: "Deals", items: [...] } }
+    - 2. The Renderer (Code): The frontend application receives the config and maps each type key to a pre-built UI component.
+    - 3. The Display: The app dynamically mounts and renders the elements on the fly.
+
+
+    - Common Use Cases
+
+    -  Dynamic Dashboards: Reordering or resizing widgets per user role.
+    -  Forms: Rendering login, checkout, or survey fields with custom validation rules dynamically.
+    -  E-Commerce & Media Apps: Swapping out home page carousels, banner ads, and product grids (used widely by platforms like Airbnb, Spotify, and Uber).
+
+- Optional Chaining (?.)
+    - operator 
+    - lets you call a deep object properies or call methods without throwing a error if an intermediate reference is "null" or "undefined".
+    - returns undefined without throwing an error.
+
+- Nullish Coalescing Operator (??)
+    - logical operator- return its right-hand side operand when its left-hand side operand is "null" or "undefined".
+    - other wise it returns the left-hand side operand.
+
+- key
+    - is a special string attribute that you must include when creating lists of elements.
+    - gives elements stable identity.
+    - allows React's Reconciliation algorithm to detemine exactly which items have changed, been added or been removed.
+    - 
+
+- NEVER KEEP HARD CODED DATA IN ANY COMPONENT FILE
+- KEEP IT IN files like - utils.js, config.js
+
+Two Types of Export / Import
+- Default Export/ Import
+    export default component;
+    import component from 'path';
+
+- Named Export/Import 
+
+ export const name;
+
+ import {name} from 'path';
+ 
+
+ - Event Handlers
+
+- React Hooks
+    - Normal JS Utility  functions
+    - useState()
+    - useEffect()
+    
